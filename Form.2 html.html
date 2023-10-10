@@ -1,0 +1,68 @@
+<html>
+    <head>
+        <title>Tugas Form 2</title>
+    </head>
+    <body>
+        <div>
+            <table>
+                <tr>
+                    <td>Bilangan Pertama : </td>
+                    <td><input type="number" id="Bilangan_1"></td>
+                </tr>
+                <tr>
+                    <td>Bilangan Kedua : </td>
+                    <td><input type="number" id="Bilangan_2"></td>
+                </tr>
+                <tr>
+                    <td><button onclick="jumlah()">+</button><button onclick="kurang()">-</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="kali()">x</button><button onclick="bagi()">/</button></td>
+                </tr>
+            </table>
+        </div>
+        <div id="content">
+            <div id="ke_1"></div>
+
+        </div>
+        <div>
+            <script type="text/javascript">
+                function jumlah(){
+                    var Bilangan1 = parseInt(document.getElementById('Bilangan_1').value);
+                    var Bilangan2 = parseInt(document.getElementById('Bilangan_2').value);
+                    var hasil = Bilangan1+Bilangan2
+                    console.log(Bilangan1+Bilangan2)
+                    alert(Bilangan1 + "+" + Bilangan2 + "=" + hasil)
+                    document.getElementById('ke_1').innerHTML = Bilangan1 + "+" + Bilangan2 + "=" + hasil   
+                }
+
+                function kurang(){
+                    var Bilangan1 = parseInt(document.getElementById('Bilangan_1').value);
+                    var Bilangan2 = parseInt(document.getElementById('Bilangan_2').value);
+                    var hasil = Bilangan1-Bilangan2
+                    console.log(Bilangan1-Bilangan2)
+                    alert(Bilangan1 + "-" + Bilangan2 + "=" + hasil)
+                    document.getElementById('ke_1').innerHTML = Bilangan1 + "-" + Bilangan2 + "=" + hasil
+                }   
+                
+                function kali(){
+                    var Bilangan1 = parseInt(document.getElementById('Bilangan_1').value);
+                    var Bilangan2 = parseInt(document.getElementById('Bilangan_2').value);
+                    var hasil = Bilangan1*Bilangan2
+                    console.log(Bilangan1*Bilangan2)
+                    alert(Bilangan1 + "X" + Bilangan2 + "=" + hasil)
+                    document.getElementById('ke_1').innerHTML = Bilangan1 + "X" + Bilangan2 + "=" + hasil
+                }    
+
+                function bagi(){
+                    var Bilangan1 = parseInt(document.getElementById('Bilangan_1').value);
+                    var Bilangan2 = parseInt(document.getElementById('Bilangan_2').value);
+                    var hasil = Bilangan1/Bilangan2
+                    console.log(Bilangan1/Bilangan2)
+                    alert(Bilangan1 + ":" + Bilangan2 + "=" + hasil)
+                    document.getElementById('ke_1').innerHTML = Bilangan1 + ":" + Bilangan2 + "=" + hasil
+                }    
+            </script>
+        </div>
+    </body>
+</html>
