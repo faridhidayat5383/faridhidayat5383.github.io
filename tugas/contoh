@@ -1,0 +1,20 @@
+<html>
+    <t<html>
+        <head><title>Deskripsi Gambar</title></head>
+        <table border="4">
+            <tr>
+                <th><a href="Home.html">Home </a></th>
+                <th><a href="Gallery.html">Galery </a></th>
+                <th><a href="about.html">about </a></th>
+                <th><a href="Contact.html">Contact </a></th>
+                <th><th1><a href="myclass.html">myclass</th>
+            </tr>
+        </table>
+        <body>
+            <img src="foto_1.jpg"alt="" style="height:  150px;widht: 300px"
+            <h1>Gambar Berikut Adalah Senja</h1>
+            <p>Senja adalah periode meninggalkan matahari terbenam, yaitu sesaat setelah
+             matahari masuk ke dalam cakrawala hingga saat cahaya aram benar-benar hilang.
+            </p>
+        </body>
+    </html>
